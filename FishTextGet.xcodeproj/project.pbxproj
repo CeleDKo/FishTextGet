@@ -11,6 +11,7 @@
 		06206B0D2B0DF1B8005D8E1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06206B0C2B0DF1B8005D8E1F /* ContentView.swift */; };
 		06206B0F2B0DF1B9005D8E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06206B0E2B0DF1B9005D8E1F /* Assets.xcassets */; };
 		06206B122B0DF1B9005D8E1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06206B112B0DF1B9005D8E1F /* Preview Assets.xcassets */; };
+		06E77A182B0E404500B67B81 /* FishTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E77A172B0E404500B67B81 /* FishTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		06206B0C2B0DF1B8005D8E1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06206B0E2B0DF1B9005D8E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06206B112B0DF1B9005D8E1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06206B1A2B0DF290005D8E1F /* FishTextApi.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FishTextApi.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		06E77A172B0E404500B67B81 /* FishTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		06206B092B0DF1B8005D8E1F /* FishTextGet */ = {
 			isa = PBXGroup;
 			children = (
+				06206B1A2B0DF290005D8E1F /* FishTextApi.playground */,
 				06206B0A2B0DF1B8005D8E1F /* FishTextGetApp.swift */,
 				06206B0C2B0DF1B8005D8E1F /* ContentView.swift */,
+				06E77A172B0E404500B67B81 /* FishTextView.swift */,
 				06206B0E2B0DF1B9005D8E1F /* Assets.xcassets */,
 				06206B102B0DF1B9005D8E1F /* Preview Content */,
 			);
@@ -104,11 +109,12 @@
 			};
 			buildConfigurationList = 06206B022B0DF1B8005D8E1F /* Build configuration list for PBXProject "FishTextGet" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 06206AFE2B0DF1B8005D8E1F;
 			productRefGroup = 06206B082B0DF1B8005D8E1F /* Products */;
@@ -138,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06206B0D2B0DF1B8005D8E1F /* ContentView.swift in Sources */,
+				06E77A182B0E404500B67B81 /* FishTextView.swift in Sources */,
 				06206B0B2B0DF1B8005D8E1F /* FishTextGetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,18 +274,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FishTextGet/Preview Content\"";
+				DEVELOPMENT_TEAM = 23975BXU2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiKinGs.FishTextGet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -295,18 +303,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FishTextGet/Preview Content\"";
+				DEVELOPMENT_TEAM = 23975BXU2V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.SwiKinGs.FishTextGet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
