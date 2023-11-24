@@ -1,7 +1,9 @@
 import SwiftUI
+import ToastUI
 
 struct FishTextView: View {
     @State public var fishText = "fishText"
+    @State private var isPresentingToast = false
     var body: some View {
         VStack
         {
@@ -12,15 +14,13 @@ struct FishTextView: View {
             
             Spacer()
             
-            ScrollView()
-            {
-                Text(fishText)
-            }
+            TextEditor(text: $fishText)
             
             Spacer()
             
             Button(action: {
                 UIPasteboard.general.string = fishText
+                isPresentingToast.toggle()
             }, label: {
                 Text("Копировать")
                     .padding(.all, 25)
@@ -28,8 +28,12 @@ struct FishTextView: View {
                     .foregroundColor(Color.white)
                     .cornerRadius(25)
                     .bold()
+            })
+            .toast(isPresented: $isPresentingToast, dismissAfter: 1.0)
+            {
+                ToastView("Скопировано")
             }
-            )
+            .toastViewStyle(InformationToastViewStyle())
         }
         .padding(.all, 25)
     }
